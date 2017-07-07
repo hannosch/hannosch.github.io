@@ -3,7 +3,7 @@ email: hanno@hannosch.eu
 description: >
   Hanno's personal thoughts and musings.
 baseurl: ""
-url: "http://blog2.hannosch.eu"
+url: "http://blog.hannosch.eu"
 github_username: hannosch
 
 markdown: kramdown
