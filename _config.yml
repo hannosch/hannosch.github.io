@@ -1,1 +1,12 @@
+title: hannosch
+email: hanno@hannosch.eu
+description: >
+  Hanno's personal thoughts and musings.
+baseurl: ""
+url: "http://blog2.hannosch.eu"
+github_username: hannosch
+
+markdown: kramdown
 theme: jekyll-theme-cayman
+gems:
+  - jekyll-feed

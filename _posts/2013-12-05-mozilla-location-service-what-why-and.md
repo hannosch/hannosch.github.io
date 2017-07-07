@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Mozilla Location Service - The What, Why and Privacy
+categories: mozilla
 date: '2013-12-05T22:13:00.001+01:00'
-author: Hanno Schlichting
-tags:
-- mozilla
 modified_time: '2015-11-07T13:23:00.505+01:00'
 blogger_orig_url: http://blog.hannosch.eu/2013/12/mozilla-location-service-what-why-and.html
 ---
@@ -24,9 +22,9 @@ Note that this is my personal opinion and not an official position of Mozilla.
 
 # What is it?
 
-There's a lot of interest in "the location space" and lots of news, start-ups
+There's a lot of interest in `the location space` and lots of news, start-ups
 and competition around location, mobile location, location context, maps and
-all things related. We aren't investing broadly in "all things location", but
+all things related. We aren't investing broadly in `all things location`, but
 are focused on one very concrete aspect: The ability of a device to determine
 its own position as represented by a latitude and longitude. A device will use
 a variety of sensors to determine information about its environment and do
@@ -112,8 +110,8 @@ directions to a specific shop inside a large shopping center, including hints
 to take escalators down or up various levels.
 
 Another not quite so obvious use-case is taking photos and automatically
-recording the position in the photos metadata. Or a service to "find my
-device" - either when a user lost it or fears it has been stolen. Maybe a user
+recording the position in the photos metadata. Or a service to `find my
+device` - either when a user lost it or fears it has been stolen. Maybe a user
 is also willing to share his or her location with a trusted group of people,
 for example as a parent I might want to be able to tell the location of my
 kids phones. Or whenever I'm near a friend of mine, I'd like to be alerted so
@@ -121,7 +119,7 @@ we don't miss each other. These cases certainly aren't for everyone and
 require strong and explicit user consent or consensus in the family.
 
 Even more recent examples are what's technically called
-["geo-fencing"](https://en.wikipedia.org/wiki/Geo-fence)
+[`geo-fencing`](https://en.wikipedia.org/wiki/Geo-fence)
 and the use of Bluetooth low energy beacons. These allow the user or apps
 on the users behalf to take some action when the user leaves or arrives at a
 certain area. A common example is being reminded to call someone or a reminder
@@ -144,7 +142,7 @@ and based on that what satellites it should see. It also uses a faster data
 link to download information about the exact orbit of satellites. Currently
 this support is outside the scope of our location service and provided by
 partners via the
-[mobile "secure user plane location" standard](https://openmobilealliance.org/about-oma/work-program/location/).
+[mobile `secure user plane location` standard](https://openmobilealliance.org/about-oma/work-program/location/).
 
 Currently we also don't deal with IP address based location or Geo-IP, which
 is commonly used to either direct website visitors to a regional part of the
@@ -272,7 +270,7 @@ and an
 response. The immediate result were two new restrictions to the services. On
 one hand greater care was taken to filter out constantly moving WiFi access
 points, as these were likely smart phones and useless for determining a users
-position. On the other hand a "you need to know two" restriction was added.
+position. On the other hand a `you need to know two` restriction was added.
 The idea here is to only answer service requests, if you can provide
 information about two nearby WiFi networks. The assumption is that you can
 only reasonably get two matching data points if you are indeed near those WiFi
@@ -305,23 +303,23 @@ While the wiretapping charges are unrelated to our location service, the
 initial concerns have led to the creation of an opt-out approach for owners of
 WiFi access points. A
 [Google blog post from November 2011](http://googlepolicyeurope.blogspot.de/2011/11/greater-choice-for- wireless-access.html)
-explains their "_nomap" suffix approach. This approach lets any WiFi access
+explains their ``_nomap`` suffix approach. This approach lets any WiFi access
 point owner signal his intent to avoid tracking. This is done by changing the
-user visible WiFi name (SSID) and append a "_nomap" string. Changing a user
+user visible WiFi name (SSID) and append a ``_nomap`` string. Changing a user
 visible name isn't ideal, but unfortunately it's the only user changeable
 setting in WiFi standards. This approach is similar to efforts like
-"do not track", which rely on a combination of a user signal and the industry
+`do not track`, which rely on a combination of a user signal and the industry
 respecting this signal.
 
 Unfortunately there's so far no industry standard for WiFi tracking. A manual
 [opt-out approach was chosen by Microsoft](https://www.windowsphone.com/en-us/support/location-block-list)
 instead. Other competitors have so far not offered any opt-out approach at all.
 
-For our own location service we have chosen to respect the "_nomap" signal. It
-has the advantage of only requiring a single user action, instead of each user
-having to track down all possible location services and dealing with lots of
-companies. Not to mention having to keep track of any new company entering the
-field. In addition we are still
+For our own location service we have chosen to respect the ``_nomap`` signal.
+It has the advantage of only requiring a single user action, instead of each
+user having to track down all possible location services and dealing with lots
+of companies. Not to mention having to keep track of any new company entering
+the field. In addition we are still
 [discussing if and how to implement the manual opt-out approach](https://bugzilla.mozilla.org/show_bug.cgi?id=874916).
 
 ## Apple and the randomized BSSID
@@ -401,8 +399,8 @@ going back and the data is available for all future people to analyze.
 # Final words
 
 I hope this sheds some more light on why we are so extremely cautious and
-don't have any good answers on questions like: "are you going to release the
-data" or "what license is the data available under". We set out to improve
+don't have any good answers on questions like: `are you going to release the
+data` or `what license is the data available under`. We set out to improve
 user privacy as one of our main goals. It might be that this goal can only be
 achieved by keeping the data private and identify a trusted organization or a
 trusted group of organizations and companies to watch over this data -
