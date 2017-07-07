@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.main-content p {
+    text-align: justify;
+}
+
+#byline {
+    font-size: 14px;
+    font-style: italic;
+}

@@ -7,6 +7,12 @@ modified_time: '2015-11-07T13:23:00.505+01:00'
 blogger_orig_url: http://blog.hannosch.eu/2013/12/mozilla-location-service-what-why-and.html
 ---
 
+# {{ page.title }}
+
+<div class="byline">
+    published on {{ post.date | date_to_string }}
+</div>
+
 I'm currently working on the
 [Mozilla Location Service](https://wiki.mozilla.org/CloudServices/Location)
 and have been doing so for the last quarters. The project was finally
@@ -420,3 +426,5 @@ leave a comment. If you want to engage with us, we'd love to hear from you
 [on IRC or our mailing list](https://wiki.mozilla.org/CloudServices/Location#Communication).
 
 Hanno
+
+[Back to homepage](./)
