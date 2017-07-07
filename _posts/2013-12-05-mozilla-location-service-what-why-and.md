@@ -10,7 +10,7 @@ blogger_orig_url: http://blog.hannosch.eu/2013/12/mozilla-location-service-what-
 # {{ page.title }}
 
 <div class="byline">
-    published on {{ page.date | date_to_string }}
+    Published on {{ page.date | date_to_string }}.
 </div>
 
 I'm currently working on the
@@ -427,4 +427,4 @@ leave a comment. If you want to engage with us, we'd love to hear from you
 
 Hanno
 
-[Back to homepage](./)
+[Back to homepage](/)
