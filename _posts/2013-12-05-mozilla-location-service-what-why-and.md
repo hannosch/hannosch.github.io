@@ -5,6 +5,7 @@ categories: mozilla
 date: '2013-12-05T22:13:00.001+01:00'
 modified_time: '2015-11-07T13:23:00.505+01:00'
 blogger_orig_url: http://blog.hannosch.eu/2013/12/mozilla-location-service-what-why-and.html
+redirect_from: "/2013/12/mozilla-location-service-what-why-and.html"
 ---
 
 # {{ page.title }}
