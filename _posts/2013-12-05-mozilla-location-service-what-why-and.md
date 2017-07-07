@@ -10,7 +10,7 @@ blogger_orig_url: http://blog.hannosch.eu/2013/12/mozilla-location-service-what-
 # {{ page.title }}
 
 <div class="byline">
-    published on {{ post.date | date_to_string }}
+    published on {{ page.date | date_to_string }}
 </div>
 
 I'm currently working on the
