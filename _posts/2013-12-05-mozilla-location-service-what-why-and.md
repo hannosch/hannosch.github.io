@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Mozilla Location Service - The What, Why and Privacy
 categories: mozilla
 date: '2013-12-05T22:13:00.001+01:00'
